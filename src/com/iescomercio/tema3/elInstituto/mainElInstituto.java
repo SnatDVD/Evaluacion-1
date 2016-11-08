@@ -8,7 +8,7 @@ public class mainElInstituto {
         Asignatura a2 = new Asignatura(101);
         Asignatura a3 = new Asignatura(102);
 
-        Alumno alumn = new Alumno(123456, "Pepito Grillo");
+        Alumno alumn = new Alumno(123456, "Juanito Valderrama");
 
         alumn.setAsig1(a1);
         alumn.setAsig2(a2);
