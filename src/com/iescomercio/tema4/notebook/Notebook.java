@@ -36,4 +36,10 @@ public class Notebook {
         }
         
     }
+    
+    public void printNotes(){
+        for(String note:notes){
+            System.out.println(note);
+        }
+    }
 }
