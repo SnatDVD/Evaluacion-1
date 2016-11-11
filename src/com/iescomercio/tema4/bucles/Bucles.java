@@ -66,7 +66,8 @@ public class Bucles {
         }
         aux = 0;
         while (aux < 70){
-            System.out.println((int)(Math.random()));
+            System.out.println((int)(Math.random() * (max - min + 1) + min));
+            aux++;
         }
     }
 
