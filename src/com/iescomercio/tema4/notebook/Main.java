@@ -10,7 +10,7 @@ public class Main {
         agenda.storeNote("Hola");
         agenda.storeNote("Gato");
         agenda.storeNote("Chiqui");
-        agenda.storeNote("El fua");
+        agenda.storeNote("Xdddddd");
         
         agenda.deleteNote(2);
         
