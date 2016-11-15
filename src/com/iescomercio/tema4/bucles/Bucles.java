@@ -6,13 +6,13 @@ public class Bucles {
         int aux = 0;
         if (num < 0) {
             while (num < aux) {
-                System.out.println(aux);
                 aux--;
+                System.out.println(aux);
             }
         } else if (num >= 0) {
             while (num > aux) {
-                System.out.println(aux);
                 aux++;
+                System.out.println(aux);
             }
         }
     }
@@ -57,7 +57,7 @@ public class Bucles {
         }
     }
     
-    public void ejercicio4(int min, int max){
+    public void ejercicio4(int min, int max, int cantidad){
         int aux;
         if (max < min) {
             aux = max;
@@ -65,7 +65,7 @@ public class Bucles {
             min = aux;
         }
         aux = 0;
-        while (aux < 70){
+        while (aux < cantidad){
             System.out.println((int)(Math.random() * (max - min + 1) + min));
             aux++;
         }

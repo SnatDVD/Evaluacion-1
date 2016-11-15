@@ -20,9 +20,11 @@ public class Notebook {
 
     public void showNote(int noteNumber) {
         if (noteNumber < 0) {
+            System.out.println("No se admiten números negativos");
         } else if (noteNumber < numberOfNotes()) {
             System.out.println(notes.get(noteNumber));
         } else {
+            System.out.println("El numero introducido es demasiado grande");
         }
     }
     
@@ -34,12 +36,29 @@ public class Notebook {
         } else {
             System.out.println("El número introducido es demasiado grande");
         }
-        
     }
     
     public void printNotes(){
         for(String note:notes){
             System.out.println(note);
+        }
+    }
+    
+    public void imprimirNotas(){
+        int contador = 0;
+        int cantidad = numberOfNotes();
+        do {
+            showNote(contador);
+            contador++;
+        } while (contador < cantidad);
+    }
+    
+    public void imprimirNotas2(){
+        int contador = 0;
+        int cantidad = numberOfNotes();
+        while (contador <= cantidad){
+            showNote(contador);
+            contador++;
         }
     }
 }
