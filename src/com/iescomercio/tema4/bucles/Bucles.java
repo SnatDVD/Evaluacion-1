@@ -70,5 +70,32 @@ public class Bucles {
             aux++;
         }
     }
+    
+    public int sumar (int min, int max){
+        int aux;
+        if (max < min) {
+            aux = max;
+            max = min;
+            min = aux;
+        }
+        aux = min;
+        int sumatorio = 0;
+        while (aux <= max){
+            sumatorio = sumatorio + aux;
+            aux++;
+        }
+        return sumatorio;
+    }
 
+    public boolean esPrimo(int n){
+        int divisores = 0;
+        int cont = 2;
+        while (cont <= n){
+            if (n%cont == 0){
+                divisores++;
+            }
+            cont++;
+        }
+        return divisores == 1;
+    }
 }

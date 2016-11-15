@@ -20,7 +20,11 @@ public class Main {
         
         //ejemplo.ejercicio3(8, 76);
         
-        ejemplo.ejercicio4(50, 20, 3);
+        //ejemplo.ejercicio4(50, 20, 3);
+        
+        //System.out.println(ejemplo.sumar(10, 0));
+        
+        System.out.println(ejemplo.esPrimo(23));
         
     }
 }
