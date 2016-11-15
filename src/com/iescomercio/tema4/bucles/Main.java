@@ -24,7 +24,7 @@ public class Main {
         
         //System.out.println(ejemplo.sumar(10, 0));
         
-        System.out.println(ejemplo.esPrimo(23));
+        System.out.println(ejemplo.esPerfecto(7));
         
     }
 }

@@ -98,4 +98,16 @@ public class Bucles {
         }
         return divisores == 1;
     }
+    
+    public boolean esPerfecto(int n){
+        int cont = 1;
+        int acum = 0;
+        while(cont < n){
+            if (n % cont == 0){
+                acum = acum + cont;
+            }
+            cont++;
+        }
+        return acum == n;
+    }
 }
