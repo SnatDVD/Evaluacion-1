@@ -23,8 +23,7 @@ public class Main {
         //ejemplo.ejercicio4(50, 20, 3);
         
         //System.out.println(ejemplo.sumar(10, 0));
-        
-        System.out.println(ejemplo.esPerfecto(7));
+
         
     }
 }
