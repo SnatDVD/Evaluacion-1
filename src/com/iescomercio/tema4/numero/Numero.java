@@ -5,8 +5,16 @@ public class Numero {
     
     private int valor;
     
-    public void cambiarValor(int nuevoValor){
+    public Numero(int n){
+        valor = n; 
+    }
+    
+    public void setValor(int nuevoValor){
         valor = nuevoValor;
+    }
+    
+    public int getValor(){
+        return valor;
     }
     
     public boolean esPrimo(){
@@ -31,6 +39,53 @@ public class Numero {
             cont++;
         }
         return acum == valor;
+    }
+    
+    public void listaPerfectos(){
+        Numero indice = new Numero(4);
+        System.out.println("Los numeros perfectos menores de " + this.valor + " son:");
+        while (indice.valor < this.valor){
+            if (indice.esPerfecto()){
+                System.out.println(indice.valor);
+            }
+            indice.valor++;
+        }
+        System.out.println("==== Fin de la lista ====");
+    }
+    
+    public void listaNumeros(){
+        System.out.println("Los numeros hasta " + valor + " son:");
+        for (int i = 1;i<=valor;i++){
+            System.out.print(i);
+        }
+        System.out.println("==== Fin de la lista ====");
+    }
+    
+    public int sumaCifras(){
+        int acumulador = 0;
+        int num = valor;
+        while(num/10 > 0){
+            acumulador = acumulador + num%10;
+            num = num/10;
+        }
+        acumulador = acumulador + num%10;
+        return acumulador;
+    }
+    
+    public int numDivisores(){
+        int acum = 0;
+        int cont = 1;
+        while (cont <= valor){
+            if (cont%valor == 0){
+                acum++;
+            }
+            cont++;
+        }
+        return acum;
+    }
+    
+    public int base2(){
+        
     }
     
 }

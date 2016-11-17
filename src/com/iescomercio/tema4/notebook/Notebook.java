@@ -19,20 +19,22 @@ public class Notebook {
     }
 
     public void showNote(int noteNumber) {
-        if (noteNumber < 0) {
+        int indice = noteNumber - 1;
+        if (indice < 0) {
             System.out.println("No se admiten números negativos");
-        } else if (noteNumber < numberOfNotes()) {
-            System.out.println(notes.get(noteNumber));
+        } else if (indice < numberOfNotes()) {
+            System.out.println(notes.get(indice));
         } else {
             System.out.println("El numero introducido es demasiado grande");
         }
     }
     
     public void deleteNote(int noteNumber) {
-        if (noteNumber < 0){
+        int indice = noteNumber - 1;
+        if (indice < 0){
             System.out.println("No se admiten números negativos");
-        } else if (noteNumber < numberOfNotes()){
-            notes.remove(noteNumber);
+        } else if (indice < numberOfNotes()){
+            notes.remove(indice);
         } else {
             System.out.println("El número introducido es demasiado grande");
         }
@@ -56,9 +58,32 @@ public class Notebook {
     public void imprimirNotas2(){
         int contador = 0;
         int cantidad = numberOfNotes();
-        while (contador <= cantidad){
+        while (contador < cantidad){
+            System.out.print(contador + 1 +": ");
             showNote(contador);
             contador++;
         }
     }
+    
+    public void buscar(String chiqui){
+        int indice = 0;
+        boolean encontrado = false;
+        int tamano = notes.size();
+        while (indice < tamano && !encontrado){
+            String nota = notes.get(indice);
+            if (nota.contains(chiqui)){
+                encontrado = true;
+            } else {
+                indice ++;
+            }
+        }
+        if (encontrado) {
+            System.out.println("Se ha encontrado la cadena en la posicion " + indice);
+        } else {
+            System.out.println("No se ha encontrado la cadena");
+        }
+    }
+    
+    
+    
 }
