@@ -5,7 +5,7 @@ public class Main {
     
     public static void main(String[] args) {
         
-        Numero n = new Numero(12345);
+        Numero n = new Numero(2);
         
         //System.out.println("Primo: " + n.esPrimo());
         
@@ -13,6 +13,10 @@ public class Main {
         
         //n.listaPerfectos();
         
-        System.out.println(n.sumaCifras());
+        //System.out.println(n.numDivisores());
+        
+        //System.out.println(n.sumaCifras());
+        
+        System.out.println(n.base2());
     }
 }

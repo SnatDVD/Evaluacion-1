@@ -64,11 +64,10 @@ public class Numero {
     public int sumaCifras(){
         int acumulador = 0;
         int num = valor;
-        while(num/10 > 0){
+        while(num > 0){
             acumulador = acumulador + num%10;
             num = num/10;
         }
-        acumulador = acumulador + num%10;
         return acumulador;
     }
     
@@ -76,7 +75,7 @@ public class Numero {
         int acum = 0;
         int cont = 1;
         while (cont <= valor){
-            if (cont%valor == 0){
+            if (valor%cont == 0){
                 acum++;
             }
             cont++;
@@ -84,8 +83,19 @@ public class Numero {
         return acum;
     }
     
-    public int base2(){
-        
+    public String base2(){
+        int num = valor;
+        String numBin ="";
+        while(num >= 2){
+            if(num%2 == 0){
+                numBin = 0 + numBin; 
+            } else if (num%2 == 1){
+                numBin = 1 + numBin;
+            }
+            num = num/2;
+        }
+        numBin = num + numBin;
+        return numBin;
     }
     
 }
