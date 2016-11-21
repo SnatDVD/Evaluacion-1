@@ -16,7 +16,8 @@ public class Main {
         
         //agenda.imprimirNotas2();
         
-        agenda.buscar("Ga");
+        //agenda.buscar("Ga");
         
+        agenda.imprimirNotasIterator();
     }
 }

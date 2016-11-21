@@ -1,6 +1,7 @@
 package com.iescomercio.tema4.notebook;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Notebook {
 
@@ -65,6 +66,20 @@ public class Notebook {
         }
     }
     
+    public void imprimirNotasIterator(){
+        int cont = 1;
+        String s = "";
+        Iterator<String> it = notes.iterator();
+        
+        System.out.println("Las notas de la agenda son: ");
+        while (it.hasNext()){
+            s = it.next();
+            System.out.println(cont + " - " + s);
+            cont++;
+        }
+    }
+    
+    
     public void buscar(String chiqui){
         int indice = 0;
         boolean encontrado = false;
@@ -84,6 +99,10 @@ public class Notebook {
         }
     }
     
-    
+    public void borrarNotasIterator (String chiqui){
+        String s;
+        
+        
+    }
     
 }

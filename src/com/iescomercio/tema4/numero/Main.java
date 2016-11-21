@@ -14,7 +14,7 @@ public class Main {
         //n.listaPerfectos();
         
         //System.out.println(n.numDivisores());
-        
+         
         //System.out.println(n.sumaCifras());
         
         System.out.println(n.base2());
