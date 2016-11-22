@@ -70,7 +70,6 @@ public class Notebook {
         int cont = 1;
         String s = "";
         Iterator<String> it = notes.iterator();
-        
         System.out.println("Las notas de la agenda son: ");
         while (it.hasNext()){
             s = it.next();
@@ -101,8 +100,13 @@ public class Notebook {
     
     public void borrarNotasIterator (String chiqui){
         String s;
-        
-        
+        Iterator<String> it = notes.iterator();
+        while(it.hasNext()){
+            s = it.next();
+            if (s.contains(chiqui)){
+                it.remove();
+            }
+        }
     }
     
 }
