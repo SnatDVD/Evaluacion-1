@@ -19,12 +19,17 @@ public class Main {
         daw.asociar(socio5);
         daw.asociar(socio6);
         
+        //daw.añadirMujeres();
+        //daw.añadirMujeres2();
+        
         //daw.purgar(1);
         
         //daw.listarMiembros();
         
+        //daw.sociosMes(1);
+        daw.sociosMes2(1);
         
-        
+        //System.out.println(daw.estaSocio("davi"));
     }
 }
     

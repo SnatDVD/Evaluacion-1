@@ -33,6 +33,14 @@ public class Socio
     {
         return año;
     }
+    
+    public void setMes(int mes){
+        if(mes<13 && mes>0){
+            this.mes = mes;
+        } else {
+            System.out.println("Debe introducir un numero entre 1 y 12");
+        }
+    }
 
     public String toString()
     {
