@@ -41,6 +41,18 @@ public class Socio
             System.out.println("Debe introducir un numero entre 1 y 12");
         }
     }
+    
+    public int trimestre(){
+        if (mes < 4){
+            return 1;
+        } else if (mes < 7){
+            return 2;
+        } else if (mes < 10){
+            return 3;
+        } else {
+            return 4;
+        }
+    }
 
     public String toString()
     {

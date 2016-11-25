@@ -3,12 +3,12 @@ package com.iescomercio.tema4.elClub;
 
 public class Main {
     public static void main(String[] args) {
-        Socio socio1 = new Socio("chiqui", 1, 1998);
-        Socio socio2 = new Socio("david", 1, 1978);
-        Socio socio3 = new Socio("superman", 8, 1203);
-        Socio socio4 = new Socio("trump", 9, 1998);
-        Socio socio5 = new Socio("pepito", 5, 1996);
-        Socio socio6 = new Socio("pac-man", 2, 1045);
+        Socio socio1 = new Socio("aaaaaaaaa", 1, 1998);
+        Socio socio2 = new Socio("bbbbbbbb", 12, 1978);
+        Socio socio3 = new Socio("cccc", 8, 1203);
+        Socio socio4 = new Socio("dddddddddd", 12, 1998);
+        Socio socio5 = new Socio("ee", 12, 1996);
+        Socio socio6 = new Socio("ffff", 8, 1045);
         
         Club daw = new Club();
         
@@ -19,17 +19,43 @@ public class Main {
         daw.asociar(socio5);
         daw.asociar(socio6);
         
-        //daw.añadirMujeres();
-        //daw.añadirMujeres2();
+        //daw.añadirMujeresWhile();
+        //daw.añadirMujeres2ForEach();
         
         //daw.purgar(1);
         
-        //daw.listarMiembros();
+        //daw.listarMiembrosIt();
         
-        //daw.sociosMes(1);
-        daw.sociosMes2(1);
+        //daw.sociosMesIt(1);
+        //daw.sociosMesForEach(1);
+        //daw.sociosMesWhile(1);
         
         //System.out.println(daw.estaSocio("davi"));
+        
+        //daw.listarSociosMes();
+        
+        //daw.mesConMasSocios();
+        
+        //daw.listarSociosTrimestre();
+        
+        //daw.trimestreMasSocios();
+        
+        //daw.trimestreMenosSocios();
+        
+        //System.out.println(daw.nombreMasLargoPrimero());
+        
+        //System.out.println(daw.nombreMasLargoUltimo());
+        
+        //System.out.println(daw.nombreMasLargoTodos());
+        
+        //System.out.println(daw.nombreMasCortoPrimero());
+        
+        //System.out.println(daw.nombreMasCortoUltimo());
+        
+        //System.out.println(daw.nombreMasCortoTodos());
+             
+        daw.dosMesesMasSocios();
+        
     }
 }
     
