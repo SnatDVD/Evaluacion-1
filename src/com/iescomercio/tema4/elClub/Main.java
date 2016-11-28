@@ -24,7 +24,7 @@ public class Main {
         
         //daw.purgar(1);
         
-        daw.listarMiembrosIt();
+        //daw.listarMiembrosIt();
         
         //daw.sociosMesIt(1);
         //daw.sociosMesForEach(1);
