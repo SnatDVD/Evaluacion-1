@@ -328,7 +328,6 @@ public class Club {
     public void dosMesesMasSocios() {
         int primerMes = 0, segundoMes = 0, primerSocios = 0, segundoSocios = 0;
         int contMes = 1, contSocios;
-
         while (contMes < 13) {
             contSocios = 0;
             for (Socio s : socios) {
@@ -379,7 +378,4 @@ public class Club {
         }
         return aux;
     }
-    
-    
-    
 }
