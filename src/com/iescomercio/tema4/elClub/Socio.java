@@ -56,9 +56,9 @@ public class Socio
 
     public String toString()
     {
-        return "Nombre: " + nombre +
+        return "Nombre: " + getNombre() +
                " se unió el mes " +
-               mes + " de " + año;
+               getNombreMes() + " de " + getAño();
     }
     
     public int mesesEnClub(){
@@ -70,5 +70,23 @@ public class Socio
         auxMeses1 = this.getAño()*12 + this.getMes();
         auxMeses2 = soc.getAño()*12 + soc.getMes();
         return auxMeses1 < auxMeses2;
+    }
+    
+    public String getNombreMes(){
+        switch (mes){
+            case 1: return "enero";
+            case 2: return "febrero";
+            case 3: return "marzo";
+            case 4: return "abril";
+            case 5: return "mayo";
+            case 6: return "junio";
+            case 7: return "julio";
+            case 8: return "agosto";
+            case 9: return "septiembre";
+            case 10: return "octubre";
+            case 11: return "noviembre";
+            case 12: return "diciembre";
+            default: return "Mes no valido";
+        }
     }
 }

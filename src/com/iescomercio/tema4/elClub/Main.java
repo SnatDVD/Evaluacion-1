@@ -24,7 +24,7 @@ public class Main {
         
         //daw.purgar(1);
         
-        //daw.listarMiembrosIt();
+        daw.listarMiembrosIt();
         
         //daw.sociosMesIt(1);
         //daw.sociosMesForEach(1);
@@ -60,7 +60,7 @@ public class Main {
         
         //System.out.println(daw.primerIngreso());
         
-        System.out.println(daw.ultimoIngreso());
+        //System.out.println(daw.ultimoIngreso());
     }
 }
     
