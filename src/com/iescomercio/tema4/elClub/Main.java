@@ -3,12 +3,12 @@ package com.iescomercio.tema4.elClub;
 
 public class Main {
     public static void main(String[] args) {
-        Socio socio1 = new Socio("aaaaaaaaa", 1, 1998);
-        Socio socio2 = new Socio("bbbbbbbb", 12, 1978);
-        Socio socio3 = new Socio("cccc", 8, 1203);
-        Socio socio4 = new Socio("dddddddddd", 12, 1998);
-        Socio socio5 = new Socio("ee", 12, 1996);
-        Socio socio6 = new Socio("ffff", 8, 1045);
+        Socio socio1 = new Socio("aaaaaaaaa", 1, 2001);
+        Socio socio2 = new Socio("bbbbbbbb", 2, 534);
+        Socio socio3 = new Socio("cccc", 5, 1896);
+        Socio socio4 = new Socio("dddddddddd", 12, 1003);
+        Socio socio5 = new Socio("ee", 3, 534);
+        Socio socio6 = new Socio("ffff", 6, 2001);
         
         Club daw = new Club();
         
@@ -54,8 +54,13 @@ public class Main {
         
         //System.out.println(daw.nombreMasCortoTodos());
              
-        daw.dosMesesMasSocios();
+        //daw.dosMesesMasSocios();
         
+        //System.out.println(daw.mediaMeses());
+        
+        //System.out.println(daw.primerIngreso());
+        
+        System.out.println(daw.ultimoIngreso());
     }
 }
     

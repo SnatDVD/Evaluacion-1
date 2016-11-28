@@ -60,4 +60,15 @@ public class Socio
                " se unió el mes " +
                mes + " de " + año;
     }
+    
+    public int mesesEnClub(){
+        return (2016 - año)*12 + 11 - mes;
+    }
+    
+    public boolean esAnterior(Socio soc){
+        int auxMeses1, auxMeses2;
+        auxMeses1 = this.getAño()*12 + this.getMes();
+        auxMeses2 = soc.getAño()*12 + soc.getMes();
+        return auxMeses1 < auxMeses2;
+    }
 }
