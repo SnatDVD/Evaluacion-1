@@ -198,9 +198,19 @@ public class Club {
             contTrimestre++;
         }
     }
+    
+    private int dameSociosTrimestre(int t){
+        int contSoc = 0;
+        for(Socio s:socios){
+            if (s.trimestre() == t){
+                contSoc++;
+            }
+        }
+        return contSoc;
+    }
 
     public void trimestreMasSocios() {
-        int contTrimestre = 0, contSoc, maxTri = 0, maxSoc = 0;
+        int contTrimestre = 1, contSoc, maxTri = 0, maxSoc = 0;
         while (contTrimestre < 5) {
             contSoc = 0;
             for (Socio s : socios) {
