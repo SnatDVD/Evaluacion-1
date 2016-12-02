@@ -62,7 +62,7 @@ public class Socio
     }
     
     public int mesesEnClub(){
-        return (2016 - año)*12 + 11 - mes;
+        return (2016 - año)*12 + 12 - mes;
     }
     
     public boolean esAnterior(Socio soc){
